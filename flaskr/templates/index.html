@@ -75,11 +75,11 @@
 
     <div class="hero-slider swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/hero-carousel/1.jpg');"></div>
-        <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/hero-carousel/2.jpg');"></div>
-        <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/hero-carousel/3.jpg');"></div>
-        <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/hero-carousel/4.jpg');"></div>
-        <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/hero-carousel/5.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/assets/img/hero-carousel/1.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/assets/img/hero-carousel/2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/assets/img/hero-carousel/3.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/assets/img/hero-carousel/4.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../static/assets/img/hero-carousel/5.jpg');"></div>
       </div>
     </div>
 
@@ -99,7 +99,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="box">
               <div class="icon"><i class="bi bi-binoculars"></i></div>
-              <h4 class="title">New dataset</h4>
+              <h4 class="title">New Dataset</h4>
               <p class="description">Crawl movie sales in the boxoffice website and combine them to existing datasets</p>
             </div>
           </div>
@@ -107,7 +107,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
               <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="title">Many factors</h4>
+              <h4 class="title">Feature Exploration</h4>
               <p class="description">Analyze relations between movie sales and some factors (including release date, genre, runtime, imdb ratings…)</p>
             </div>
           </div>
@@ -115,7 +115,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="box">
               <div class="icon"><i class="bi bi-bar-chart"></i></div>
-              <h4 class="title">Long time span</h4>
+              <h4 class="title">Long Time Span</h4>
               <p class="description">Provide a visualized analysis from 2010 to 2022</p>
             </div>
           </div>
@@ -123,7 +123,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
               <div class="icon"><i class="bi bi-briefcase"></i></div>
-              <h4 class="title">Creative and interactive application</h4>
+              <h4 class="title">Creative and Interactive Application</h4>
               <p class="description">Predict movie sales for movie providers when providing related information</p>
             </div>
           </div>
@@ -216,7 +216,7 @@ feature information clearly presented.</p>
 
         <div class="container">
           <br>
-          <h4 class="title"><strong>Need codes?</strong> <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project">Click here to see our GitHub repo!</a></h4>
+          <h4 class="title"><strong>Need codes?</strong> <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project">Click here to see our GitHub Repo!</a></h4>
         </div>
 
       </div>
@@ -233,92 +233,83 @@ feature information clearly presented.</p>
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="../static/assets/img/figures/imdbrate-distribution.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>imdbrate-distribution</h4>
+              <p>From this figure, you can find that 6.5 is the most common imdb rate in this dataset. Also, the number of imdb rate less than 5 and more than 8 is very small.</p>
+              <a href="../static/assets/img/figures/imdbrate-distribution.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="../static/assets/img/figures/movie-genre-proportions.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>movie-genre-proportions</h4>
+              <p>This figure is to show the proportions of movie genres. Drama, comedy, action and adventure are the parts that is more than 10%.</p>
+              <a href="../static/assets/img/figures/movie-genre-proportions.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../static/assets/img/figures/runtime-distribution.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>runtime-distribution</h4>
+              <p>From this figure, you can find that 100-125 mins is the most common run time in this dataset. Also, the number of imdb rate less than 75 and more than 175 is very small.</p>
+              <a href="../static/assets/img/figures/runtime-distribution.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../static/assets/img/figures/top20-directors.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>top20-directors-movie-count</h4>
+              <p>The number of movies made by Tyler Perry is the most in our dataset, followed by that made by Steven Spielberg. </p>
+              <a href="../static/assets/img/figures/top20-directors.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../static/assets/img/figures/top10-directors-highest-gross.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>top10-directors-highest-gross</h4>
+              <p>The total gross of movies made by Christopher Nolan is almost 500 millions during 12 years.</p>
+              <a href="../static/assets/img/figures/top10-directors-highest-gross.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <img src="../static/assets/img/figures/highest-gross-movie.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>highest-gross-movie</h4>
+              <p>Frozen II has the highest gross for 2.9 billions.</p>
+              <a href="../static/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <img src="../static/assets/img/figures/imdbrate-year.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>imdbrate-year</h4>
+              <p>This figure is to show the change of imdb rate from year to year. This is a detailed version of imdbrate distribution, since we introduce the year variable.</p>
+              <a href="../static/assets/img/figures/imdbrate-year.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <img src="../static/assets/img/figures/word-cloud.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>word-cloud</h4>
+              <p>This figure is to show the word cloud of genre. You can see drama, comedy and action are the most popular ones.</p>
+              <a href="../static/assets/img/figures/word-cloud.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../static/assets/img/figures/codeshere.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Need codes?</h4>
+              <p>Click link sign to see our codes!</p>
+              <a href="https://www.kaggle.com/code/zjt1027/visualization?scriptVersionId=112880368" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -331,8 +322,8 @@ feature information clearly presented.</p>
     <section id="prediction" class="portfolio">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Our Portfolio</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>prediction</h2>
+          <p>We use several models to predict the total gross when providing these information. </p>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -441,7 +432,7 @@ feature information clearly presented.</p>
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/team-1.jpg" alt=""></div>
+              <div class="pic"><img src="../static/assets/img/team-1.jpg" alt=""></div>
               <div class="details">
                 <h4>Hanlun Wang</h4>
                 <span>hw2839@columbia.edu</span>
@@ -451,7 +442,7 @@ feature information clearly presented.</p>
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/team-2.jpg" alt=""></div>
+              <div class="pic"><img src="../static/assets/img/team-2.jpg" alt=""></div>
               <div class="details">
                 <h4>Weirui Peng</h4>
                 <span>wp2279@columbia.edu</span>
@@ -461,7 +452,7 @@ feature information clearly presented.</p>
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/flaskr/static/assets/img/team-3.jpg" alt=""></div>
+              <div class="pic"><img src="../static/assets/img/team-3.jpg" alt=""></div>
               <div class="details">
                 <h4>Jingtian Zhang</h4>
                 <span>jz3500@columbia.edu</span>
