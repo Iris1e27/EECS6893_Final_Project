@@ -22,10 +22,26 @@ def create_app(test_config=None):
     def index():
         return render_template("index.html")
 
+    @app.route('/prediction', methods=['GET', 'POST'])
+    def prediction():
+        if request.method == "POST":
+            # getting input with name = fname in HTML form
+            year = request.form['year']
+            title = request.form['title']
+            imdbRate = request.form['imdbRate']
+            runtime = request.form['runtime']
+            genres = request.form['genres']
+            directors = request.form['directors']
+
+            print(year + title + imdbRate + runtime + genres + directors)
+            
+
+        return render_template("prediction.html")
+
     return app
 
 
 if __name__ == "__main__":
     app = create_app()
     app.secret_key = "super secret key"
-    app.run(host='0.0.0.0', port=8111)
+    app.run(host='0.0.0.0', port=8111, debug=True)
