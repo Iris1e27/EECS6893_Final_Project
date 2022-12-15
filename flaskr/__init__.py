@@ -5,6 +5,8 @@ import functools
 from werkzeug.security import check_password_hash, generate_password_hash
 import time
 
+import predict
+
 tmpl_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 
 
@@ -33,7 +35,16 @@ def create_app(test_config=None):
             genres = request.form['genres']
             directors = request.form['directors']
 
-            print(year + title + imdbRate + runtime + genres + directors)
+            genres_list = genres.split(", ")
+            directors_list = str(directors.split(", "))
+
+            print(year + title + imdbRate + runtime)
+            print(genres_list)
+            print(directors_list)
+
+            result = predict.predict(year, title, imdbRate, runtime, genres_list, directors_list)
+
+            print(result)
             
 
         return render_template("prediction.html")
