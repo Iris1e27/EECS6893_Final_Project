@@ -4,4 +4,4 @@
 2. Combine
 3. Data analysis and visualization
 4. Prediction
-5. Generate pages from template
+5. Generate pages from template https://bootstrapmade.com/demo/Reveal/
