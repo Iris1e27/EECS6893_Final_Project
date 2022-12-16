@@ -44,7 +44,12 @@ def create_app(test_config=None):
 
             result = predict.predict(year, title, imdbRate, runtime, genres_list, directors_list)
 
+            result = '{:,}'.format(int(result[0]))
+
+            RESULT = "The predicted gross of your movie is $"+result
+
             print(result)
+            return render_template("prediction.html", RESULT = RESULT)
             
 
         return render_template("prediction.html")

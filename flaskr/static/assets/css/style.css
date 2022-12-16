@@ -1249,3 +1249,7 @@ section {
 #mySelectOptions label:hover {
   background-color: #1e90ff;
 }
+
+#result {
+  float: right;
+}
