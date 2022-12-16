@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 
 # features = ['year', 'title', 'imdbRate', 'runtime', 'genres', 'directors']
 def predict(year, title, imdbRate, runtime, genres, directors):
-    DATA_PATH = '../dataset/combine.dataset.csv'
+    DATA_PATH = 'https://raw.githubusercontent.com/HanlunWang/EECS6893_Final_Project/main/dataset/combine.dataset.csv'
 
     input = {'year': year, 'title': title, 'imdbRate': imdbRate, 'runtime': runtime, 'genres': genres, 'directors': directors}
 
