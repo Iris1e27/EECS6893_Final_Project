@@ -75,14 +75,11 @@ def predict(year, title, imdbRate, runtime, genres, directors):
     # Add one-hot encoded columns to numerical features
     OH_X_train = pd.concat([num_X_train, OH_cols_train], axis=1)
     OH_X_valid = pd.concat([num_X_valid, OH_cols_valid], axis=1)
-
-    OH_X_train.columns = OH_X_train.columns.astype(str)
-    y_train.columns = y_train.columns.astype(str)
     
     lr_model = LinearRegression()
 
     # Fit the model to the training data
-    lr_model.fit(OH_X_train, y_train)
+    lr_model.fit(OH_X_train.values, y_train)
     result = lr_model.predict(OH_X_valid.tail(1))
 
     return result
